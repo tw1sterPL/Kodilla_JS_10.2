@@ -8,4 +8,5 @@ console.log('Witaj, ' + name);
   var name = prompt('Wpisz swoje ID');
   alert('Witaj, ' + name);
   console.log(‘Zakomentowana się nie wywoła’);
+  
 */
