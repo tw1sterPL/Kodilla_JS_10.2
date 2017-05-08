@@ -13,13 +13,13 @@ console.log('Witaj, ' + name);
 
 // wzór na pole trójkąta
 var a = prompt('Podaj wartość a');
-var b = prompt('Podaj wartość h');
+var b = prompt('Podaj wartość b');
 
-var triangleArea = a*b/2;
-if ((triangleArea < 0)) {
-	alert("błąd, takiego pola nie da sie obliczyć - spróbuj ponownie");
+var value = (a*a) + (2*a*b) - (b*b);
+	if ((value < 0)) {
+	alert("wynik ujemny:" + value);
 }
 else {
-alert('Pole wynosi, ' + triangleArea);
-console.log('Pole trójkąta o podstawie a: ' + a + ' i wysokości h: ' + h + ' wynosi: ' + triangleArea);
+	alert('wynik dodatni:' + value);
+	console.log('zmienna a' + a + ' zmienna b ' + b + ' wynosi: ' + value);
 }
