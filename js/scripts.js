@@ -1,25 +1,16 @@
-// plik scripts.js
-var name = prompt('Wpisz swoje imię');
-alert('Witaj, ' + name);
-console.log('Witaj, ' + name);
+// funkcja: wzór na pole trójkąta
+var triangle1Area = getTriangleArea(10, 15);
+var triangle2Area = getTriangleArea(10, 18);
+var triangle3Area = getTriangleArea(10, 20);
 
-/*
-  komentarz blokowy
-  var name = prompt('Wpisz swoje ID');
-  alert('Witaj, ' + name);
-  console.log(‘Zakomentowana się nie wywoła’);
-
-*/
-
-// wzór na pole trójkąta
-var a = prompt('Podaj wartość a');
-var b = prompt('Podaj wartość b');
-
-var value = (a*a) + (2*a*b) - (b*b);
-	if ((value < 0)) {
-	alert("wynik ujemny:" + value);
+function getTriangleArea(a, h) {
+	if (a <= 0 || h <=0) {
+    return 'nieprawidlowe dane';
+	}	
+	else {
+		var result = a * h/2;
+		return result;
+	}	
 }
-else {
-	alert('wynik dodatni:' + value);
-	console.log('zmienna a' + a + ' zmienna b ' + b + ' wynosi: ' + value);
-}
+
+console.log( triangle1Area, triangle2Area, triangle3Area );
