@@ -1,13 +1,9 @@
-// zadanie 9.2
-var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'];
-var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
-var allNames = femaleNames.concat(maleNames);
+// zadanie 9.3
+var text = 'Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na czerwonych dywanach.';
+var animal = 'Zielone slonie';
+var animalUpperCased = animal.toUpperCase();
+var textCharsAfter = text.replace('Papugi','Zielone slonie');
+var partOfText = text.slice(7,37);
 
-console.log(allNames);
 
-var newName = 'Marian';
-if (allNames.indexOf(newName) === -1) {
-	var allNames = allNames.push('Marian');
-}
-
-console.log(allNames);
+console.log(animalUpperCased, partOfText);
