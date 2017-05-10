@@ -1,9 +1,14 @@
-// zadanie 9.3
-var text = 'Papugi koszą trawę, unosząc się nad ziemią 15 centymetrów, na czerwonych dywanach.';
-var animal = 'Zielone slonie';
-var animalUpperCased = animal.toUpperCase();
-var textCharsAfter = text.replace('Papugi','Zielone slonie');
-var partOfText = text.slice(7,37);
-
-
-console.log(animalUpperCased, partOfText);
+// zadanie 9.4
+function drawTree (x) {
+var i = 0;
+	while (i <= x - 1) {
+	i++;
+var star = ' ';
+	for (var j = 1; j <= i; j++) {
+      	star += '*';
+    }
+    console.log(star);
+  }
+}
+x = prompt ('Wysokosc Choinki');
+drawTree (x);
