@@ -1,16 +1,13 @@
-// funkcja: wzór na pole trójkąta
-var triangle1Area = getTriangleArea(10, 15);
-var triangle2Area = getTriangleArea(10, 18);
-var triangle3Area = getTriangleArea(10, 20);
+// zadanie 9.2
+var femaleNames = ['Asia', 'Kasia', 'Ola', 'Jola'];
+var maleNames = ['Piotrek', 'Marek', 'Arek', 'Jarek'];
+var allNames = femaleNames.concat(maleNames);
 
-function getTriangleArea(a, h) {
-	if (a <= 0 || h <=0) {
-    return 'nieprawidlowe dane';
-	}	
-	else {
-		var result = a * h/2;
-		return result;
-	}	
+console.log(allNames);
+
+var newName = 'Marian';
+if (allNames.indexOf(newName) === -1) {
+	var allNames = allNames.push('Marian');
 }
 
-console.log( triangle1Area, triangle2Area, triangle3Area );
+console.log(allNames);
