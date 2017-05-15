@@ -1,8 +1,12 @@
-// zadanie 9.5
-var withMenuItemsClass = document.getElementsByClassName('button');
+// zadanie 9.6
+var list = document.getElementById('list');
+var add = document.getElementById('addElem');
 
-console.log(withMenuItemsClass);
+add.addEventListener('click', function() {
+  list.innerHTML += '<li>item ' + itemsByTagName.length + '</li>';
+});
 
-for (var x = 0; x < withMenuItemsClass.length; x++) {
-	alert(withMenuItemsClass[x].innerText);
-}
+var itemsByTagName = document.getElementsByTagName('li');
+
+console.log(itemsByTagName);
+console.log(itemsByTagName.length);
