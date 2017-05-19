@@ -1,6 +1,3 @@
 .container {
-	padding: 20px;
-}
-#js-playerResult, #js-computerResult, #js-gameResult {
-	font-weight: 900;
+	padding: 40px;
 }
