@@ -1,5 +1,6 @@
-body {
-  background-color: red;
-  color: white; }
-
-/*# sourceMappingURL=style.css.map */
+.container {
+	padding: 20px;
+}
+#js-playerResult, #js-computerResult, #js-gameResult {
+	font-weight: 900;
+}
